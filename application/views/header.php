@@ -10,6 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
     background-image: url('design/images/img1.png');
   }
   </style>
+  
   <title> <?php echo $a; ?> </title>
 
  <!--  <meta charset="utf-8">
@@ -36,15 +37,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
-      </button>
       <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li  class="last-inline"><a href="<?php echo site_url('welcome/home')?>">Home</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
+        <li  class="last-inline"><a href="<?php echo site_url('welcome/home')?>"><span class="glyphicon glyphicon-home">Home</span></a></li>
+        <li><a href="<?php echo base_url()?>about">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -55,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Login<span class="caret"></span></a></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"></span> Login<span class="caret"></span></a></a>
           <ul class="dropdown-menu">
             <li class="active"><a href="<?php echo site_url('welcome/tutor_login')?>">Tutor</a></li>
             <li class="active"><a href="<?php echo site_url('welcome/student_login')?>">Student</a></li>
