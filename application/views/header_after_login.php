@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
 
   <style type="text/css">
   body{
-    background-image: url('design/images/img1.png');
+    background-image: url('../../design/images/img1.png');
   }
   </style>
   <title> <?php echo $a; ?> </title>
@@ -41,10 +41,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li  class="last-inline"><a href="<?php echo site_url('welcome/home_after_login')?>">Home</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
+        <li  class="last-inline"><a href="<?php echo site_url('welcome/home_after_login')?>"><span class="glyphicon glyphicon-home">Home</a></li>
+        <li><a href="<?php echo base_url()?>welcome/tutor_add_course">Add Course</a></li> 
+        <li><a href="<?php echo base_url()?>welcome/tutor_show_course">All Course</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Notice<span class="caret"></span></a></a>
+          <ul class="dropdown-menu">
+            <li><a href="<?php echo base_url()?>tutor_add_notice">Add Notice</a></li>
+            <li><a href="<?php echo base_url()?>tutor_show_notice">Show Notice</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lecture<span class="caret"></span></a></a>
+          <ul class="dropdown-menu">
+            <li><a href="<?php echo base_url()?>tutor_add_lecture">Add Lecture</a></li>
+            <li><a href="<?php echo base_url()?>tutor_show_lecture">Show Lecture</a></li>
+          </ul>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -55,7 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
           </ul>
         </li>
         <li >
-          <a  href="<?php echo base_url()?>welcome"><span class="glyphicon glyphicon-log-out"></span> Logout</a><!-- </a> -->
+          <a  href="<?php echo base_url()?>welcome/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a><!-- </a> -->
         </li>
       </ul>
     </div>
