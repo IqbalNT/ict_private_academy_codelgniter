@@ -53,8 +53,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['tutor_registration'] = 'welcome/tutor_registration';
 $route['tutor_registration/register'] = 'welcome/valid_tutor';
 $route['student_registration/register'] = 'welcome/valid_student';
+$route['about'] = 'welcome/about';
 $route['tutor/tutor_info'] = 'welcome/is_tutor_login';
 $route['tutor/update_tutor_profile']='welcome/update_tutor_profile_info';
+$route['welcome/tutor_add_course']='welcome/tutor_add_course';
+$route['tutor/addedcourse']='welcome/courseadd';
+$route['tutor/allcourse']='welcome/tutor_show_course';
+$route['welcome']='welcome/logout';
+$route['update/tutor_course/(:num)']='welcome/update_tutor_course/$1';
+$route['delete/tutor_course/(:num)']='welcome/delete_tutor_course/$1';
+$route['tutor_add_notice']='notice/tutor_add_notice';
+$route['noticeadd']='notice/noticeadd';
+$route['tutor_show_notice']='notice/tutor_show_notice';
+$route['update/tutor_notice/(:num)']='notice/update_tutor_notice/$1';
+$route['delete/tutor_notice/(:num)']='notice/delete_tutor_notice/$1';
+$route['tutor_add_lecture']='Lectureupload/tutor_add_lecture';
+$route['tutor_show_lecture']='Lectureupload/tutor_show_lecture';
+$route['delete/tutor_lecture/(:num)']='Lectureupload/delete_tutor_lecture/$1';
+//for student
+$route['student/student_info'] = 'student/is_student_login';
+$route['student/home_after_login']='student/home_after_login_student';
+$route['student/update_student_profile']='student/update_student_profile';
+$route['update_student_profile']='student/update_student_profile_info';
+$route['welcome']='student/logout';
+$route['student_show_lecture']='student/student_show_lecture';
+
 
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
