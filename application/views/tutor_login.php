@@ -44,17 +44,20 @@
 <?php }?>
 
 			  <form style="font-size: 30px;margin-right: 275px;text-align: center;margin-left: 265px;" action="<?=base_url()?>tutor/tutor_info" method="POST">
-			    <div class="form-group">
-			      <label for="username">Username:</label>
-			      <input type="text" class="form-control" placeholder="Enter Your username" name="username">
-			    </div>
-			    <div class="form-group">
-			      <label for="pwd">Password:</label>
-			      <input type="password" class="form-control" placeholder="Enter password" name="pwd">
-			    </div>
-			    <div>
-			     <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-				</div>
+			    
+				    <div class="input-group" style="margin-bottom:10px;">
+				      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+				      <input type="text" class="form-control" placeholder="Enter Your username" name="username">
+				    </div>
+				    <div class="input-group" style="margin-bottom:10px;">
+				      <!-- <label for="pwd">Password:</label> -->
+				      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+				      <input type="password" class="form-control" placeholder="Enter password" name="pwd">
+				    </div>
+				    <div>
+				     <button type="submit" class="btn btn-primary btn-lg" style="margin-bottom:10px;">Submit</button>
+					</div>
+				
 			  </form>
 
 			</div>
